@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors ide
+ * @email   794958215@qq.com
+ * @date    2019-03-21 20:03:53
+ * @version $Id$
+ */
+ *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            display: inline-block;
+        }
+        textarea{
+            resize: none;
+            font-size: 16px;
+            width: 100%;
+            height: 100%
+        }
+        .top{
+            width:100%;
+            height:60px;
+            line-height:60px;
+            vertical-align:middle;
+            text-align:center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+        .content{
+            width: 60%;
+            margin: 0 15%;
+            padding: 20px 5%;
+            background-color:pink;
+        }
+        .content .cont1,.content .cont{
+            width: 45%;
+        }
+        .content .cont1{
+            margin-top: 20px;
+            margin-right: 5%;
+        }
+        .clean{
+            display: block;
+        }

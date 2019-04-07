@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        .head-img {
+            width: 100%;
+            height: 100vh;
+        }
+        </style>
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 -->
+<script src="js/jquery.fullPage.min.js"></script>
+
+<script src="js/jquery.fullPage.js"></script>
+</head>
+<body>
+        <div id="dowebok">
+                <div class="section">
+                <img class="head-img section" src="image\banner.jpg">
+                </div>
+           
+                <div class="section">
+                    <h3>第二屏</h3>
+                </div>
+                <div class="section">
+                    <h3>第三屏</h3>
+                </div>
+                <div class="section">
+                    <h3>第四屏</h3>
+                </div>
+            </div>
+
+            
+            
+<script>
+$(function(){
+    $('#dowebok').fullpage();
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var scroll_top = $(window).scrollTop();
+        if (scroll_top >=700) {
+            $("#left").css("margin-left", " 0")
+        } else{
+            $("#left").css("margin-left", " -300px")
+        }
+        $(window).scroll(function () {
+            var scroll_top = $(window).scrollTop();           
+            if (scroll_top >= 700) {
+                $("#left").css("margin-left", " 0")
+            } else  {
+                $("#left").css("margin-left", " -300px")
+            }
+        });
+    });
+</script>
+    
+</body>
+</html>

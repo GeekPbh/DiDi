@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors ide
+ * @email   794958215@qq.com
+ * @date    2019-03-21 19:49:10
+ * @version $Id$
+ */
+*{
+            margin:0;
+            padding:0;
+        }
+        textarea{
+            resize: none;
+            font-size: 16px;
+        }
+        .top{
+            width:100%;
+            height:60px;
+            line-height:60px;
+            vertical-align:middle;
+            text-align:center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+        .cont{
+            width: 70%;
+            margin: 0 15%;
+            margin-top: 20px;
+        }
+        .cont .img{
+            width: 30%;
+            height: 200px;
+            margin-top: 60px;
+            margin-right: 1%;
+            margin-left: 5%;
+        }
+        .cont .content{
+            width: 60%;
+            height: 260px;
+        }
+        .cont .img,.cont .content{
+            vertical-align: top;
+        }
+        .cont .content .content_top{
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+        }
+        .cont .content .content_top .text{
+            width: 50%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+        .cont .content .content_cont{
+            width: 100%;
+        }

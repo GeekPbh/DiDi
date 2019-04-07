@@ -1,0 +1,41 @@
+ var scroll_top = $(window).scrollTop();
+    if (scroll_top >= 550) {
+        $(".page").removeClass("page_p_a");
+        $(".page").addClass("page_p_f");
+        windows_width();
+    } else {
+        $(".page").addClass("page_p_a");
+        $(".page").removeClass("page_p_f");
+        windows_width();
+    }
+
+    if(scroll_top > 0){
+        $(".new_enroo_nav").addClass("backgrouond_000")
+    }else{
+        $(".new_enroo_nav").removeClass("backgrouond_000")
+    }
+
+
+    $(window).scroll(function () {
+        var scroll_top = $(window).scrollTop();
+        // let dir_wrap_hei = $(".direction_wrapper").offset().top;
+        if (scroll_top >= 550) {
+            $(".page").removeClass("page_p_a");
+            $(".page").addClass("page_p_f");
+            windows_width();
+        } else {
+            $(".page").addClass("page_p_a");
+            $(".page").removeClass("page_p_f");
+        }
+
+        if(scroll_top > 0){
+            // $(".new_enroo_nav").animate({
+            //     backgroundColor: '#000'
+            // }, 200)
+            $(".new_enroo_nav").addClass("backgrouond_000");
+            $(".navbar-collapse").css({"background-color": "#000"})
+        }else{
+            $(".new_enroo_nav").removeClass("backgrouond_000")
+            $(".navbar-collapse").css({"background-color": "transparent"})
+        }
+    });
