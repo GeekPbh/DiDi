@@ -20,15 +20,15 @@
     <div>
         <div class="nav-left" id="left">
             <ul>
-                <li><a href="#one">滴滴公司</a></li>
-                <li><a href="#two">事件过程</a></li>
-                <li><a href="#three">公司响应</a></li>
-                <li><a href="#five">社会影响</a></li>
-                <li><a href="#six">各方评论</a></li>
+                <li><a class="nav-link-a" href="javascript:void(0)" onclick="index.nav_bar(this, 'one')">滴滴公司</a></li>
+                <li><a class="nav-link-a" href="javascript:void(0)" onclick="index.nav_bar(this, 'two')">事件过程</a></li>
+                <li><a class="nav-link-a" href="javascript:void(0)" onclick="index.nav_bar(this, 'three')">公司响应</a></li>
+                <li><a class="nav-link-a" href="javascript:void(0)" onclick="index.nav_bar(this, 'five')">社会影响</a></li>
+                <li><a class="nav-link-a" href="javascript:void(0)" onclick="index.nav_bar(this, 'six')">各方评论</a></li>
             </ul>
         </div>
 
-        <div id="one" class="nav-line"></div>
+        <div id="one" class="data_click nav-line" data-nav="one"></div>
         <div class="nav-right">
             <h1 class="h1">公司简介</h1>
             <div class="right-first">
@@ -36,17 +36,20 @@
                 <div>
                     <img src="image\滴滴公司.jpg">
                     <div class="right-first-div">
-
+                        <img class="right-first-div-img" src="./image/车.png">
+                        <img class="right-first-div-img1" src="./image/车.png">
+                        <p style="text-decoration: underline;">
                         彭宝华牛逼彭宝华牛逼彭宝华牛逼
                         彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华
                         牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华
                         牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华
-                        牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼</div>
+                        牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼彭宝华牛逼
+                    </p></div>
                 </div>
             </div>
 
 
-            <div id="two" class="right-second">
+            <div id="two" class="data_click right-second"  data-nav="two">
                 <div class="right-second-left div">
                     <div id="triangle-right" class="float-left">
                             
@@ -97,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="right-Third">
+            <div class="data_click right-Third"  data-nav="three">
                 <table width="100%">
                     <tr>
                         <td width="31%" rowspan="2" align="center" valign="middle">
@@ -189,7 +192,7 @@
 
 
             </div>
-            <div id="five" class="right-Fifth">
+            <div id="five" class="data_click right-Fifth"  data-nav="five">
                 <!-- <div id="triangle-down"></div>
                         <div id="triangle-down1"></div>
                         <div id="triangle-down2"></div>  -->
@@ -206,7 +209,7 @@
 
             </div>
 
-            <div id="six" class="right-Sixth">
+            <div id="six" class="data_click right-Sixth"  data-nav="six">
                 <div class="nav-line"></div>
                 <div>
                     <div class="right-Sixth-lefttop div" id="down-oval">搜狐：
@@ -233,13 +236,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -259,12 +255,33 @@
         } else {
             $("#left").css("margin-left", " -300px")
         }
+        var aa = $("[data-nav='five']").offset().top;
+        var bb = $("[data-nav='three']").offset().top;
+        var cc = $("[data-nav='two']").offset().top;
+        var dd = $("[data-nav='one']").offset().top;
+        var ee = $("[data-nav='six']").offset().top;
         $(window).scroll(function () {
             var scroll_top = $(window).scrollTop();
             if (scroll_top >= 658) {
                 $("#left").css("margin-left", " 0")
             } else {
                 $("#left").css("margin-left", " -300px")
+            }
+            if(scroll_top >= ee){
+                var dlsb = $(".nav-link-a")[4];                
+                index.classChange(dlsb)
+             }else if(scroll_top >= aa){
+                var dlsb = $(".nav-link-a")[3];                
+                index.classChange(dlsb)
+            }else if(scroll_top >= bb){
+                var dlsb = $(".nav-link-a")[2];                
+                index.classChange(dlsb)
+            }else if(scroll_top >= cc){
+                var dlsb = $(".nav-link-a")[1];                
+                index.classChange(dlsb)
+            }else if(scroll_top >= dd){
+                var dlsb = $(".nav-link-a")[0];                
+                index.classChange(dlsb)
             }
         });
         $(".top-circle").on("click", function () {
@@ -275,6 +292,35 @@
             $(".right-second-right-right").get(index).className = "right-second-right-right"
         })
     });
+    var index = {
+        nav_bar: function(b, a){
+            var this_val = b;
+            $(".data_click").each(function(el, val){
+                var val_height = val.getAttribute("data-nav");
+                if(a == val_height){
+                    $("body, html").animate({
+                        scrollTop: val.offsetTop - 250
+                    }, 700);
+                    $(".nav-link-a").each(function(el, val){
+                        if(b == val){
+                            b.className="nav-link-a active"
+                        }else{
+                            val.className = "nav-link-a"
+                        }
+                    })
+                }
+            })
+        },
+        classChange: function(a){
+            $(".nav-link-a").each(function(el, val){
+                if(a == val){
+                    a.className="nav-link-a active"
+                }else{
+                    val.className = "nav-link-a"
+                }
+            })
+        }
+    }
 </script>
 
 <script></script>
