@@ -38,10 +38,8 @@
      width: 14%;
      margin-left: -300px;
      margin-right: 1%;
-     height: 300px;
-     background: #fff;
+     height: 300px; 
      transition: 0.2s;
-     background: #fabb4a;
  }
 
  .nav-line {
@@ -295,7 +293,7 @@
      width: 0;
      height: 0;
      border-top: 150px solid transparent;
-     border-left: 300px solid red;
+     border-left: 300px solid #f8540d;
      border-bottom: 150px solid transparent;
  }
 
