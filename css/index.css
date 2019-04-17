@@ -38,7 +38,7 @@
      width: 14%;
      margin-left: -300px;
      margin-right: 1%;
-     height: 300px; 
+     height: 300px;
      transition: 0.2s;
  }
 
@@ -68,12 +68,16 @@
      margin-right: 5%;
      padding-top: 30px;
  }
+ .right-first p{
+    border-bottom: 5px dotted #000000;
+    font-size:23px;
+ } 
 
  .h1 {
      text-align: center;
      background: #f8540d;
      width: 175px;
-     margin: 4px auto;
+     margin: 0px auto;
  }
 
  .right-first>div>img {
@@ -94,10 +98,10 @@
      /*padding-top: 100px;*/
  }
  .right-first-div-img{
-     width: 100px;
+     width: 75px;
  }
  .right-first-div-img1{
-     width: 80px;
+     width: 60px;
  }
 
  .right-second {
@@ -105,6 +109,11 @@
      background: #fbcf7f;
      margin-right: 5%;
      margin-top: 63px;
+ }
+
+ .right-seconnd-txt1{
+     font-family: sans-serif;
+     font-size:28px;
  }
 
  .right-second-left {
@@ -154,11 +163,14 @@
      margin-right: 5%;
      margin-top: 63px;
  }
+ .right-Fourth-txt{
+     font-family: sans-serif;
+     font-size:23px;
+ }
 
  .right-Fourth h2 {
      text-align: center;
  }
-
  .right-Fourth img {
      width: 300px;
      height: 200px;
@@ -231,19 +243,20 @@
  }
 
  .right-Fifth img {
-     width: 150;
-     height: 150;
-     margin-left: 4%;
-     margin-top: 140px;
+     width: 130;
+     height: 130;
+     margin: 140px 37%;
+     /* margin-left: 4%;
+     margin-top: 140px; */
      position: absolute;
  }
 
- 
+
 
  .right-Sixth {
-     height: 474px;
-     background: #fadca3;
-     margin-right: 5%;
+     height: 474px; 
+     background: #fbcf7f;;
+     /* margin-right: 5%; */
      margin-top: 83px
  }
 
@@ -253,7 +266,7 @@
  }
 
  .right-Sixth-lefttop {
-     margin-left: 18%;
+     margin-left: 25%;
      margin-top: 30px;
  }
 
@@ -262,7 +275,7 @@
  }
 
  .right-Sixth-leftdown {
-     margin-left: 9%;
+     margin-left: 15%;
  }
 
  .right-Sixth-rightdown {
@@ -272,7 +285,7 @@
  #top-oval {
      width: 50px;
      height: 50px;
-     background: #f8540d;
+     background:#f8540d;
      border-radius: 50px/ 50px;
      cursor: pointer;
  }
@@ -280,7 +293,7 @@
  #down-oval {
      width: 350px;
      height: 175px;
-     background: #f8540d;
+     background: #fabb4a;
      border-radius: 175px / 87.5px;
      overflow: hidden;
  }
@@ -354,7 +367,7 @@
     margin-bottom: -23px;
     width: 100%;
     height: 100px;
-    background: #FFCC99;
+    background: #ff550d;
     margin-top: 26px;
  }
  .sanjiaoxingo{
