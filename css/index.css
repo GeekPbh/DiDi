@@ -70,8 +70,11 @@
  }
  .right-first p{
     border-bottom: 5px dotted #000000;
-    font-size:23px;
- } 
+    font-size:20px;
+ }
+ .right-first-text{
+     width: 730px;
+ }
 
  .h1 {
      text-align: center;
@@ -254,7 +257,7 @@
 
 
  .right-Sixth {
-     height: 474px; 
+     height: 474px;
      background: #fbcf7f;;
      /* margin-right: 5%; */
      margin-top: 83px
@@ -367,7 +370,7 @@
     margin-bottom: -23px;
     width: 100%;
     height: 100px;
-    background: #ff550d;
+    background:#fff;
     margin-top: 26px;
  }
  .sanjiaoxingo{
