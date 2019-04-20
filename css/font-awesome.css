@@ -251,6 +251,7 @@
 }
 .fa-clock-o:before {
   content: "\f017";
+  color: #bf6766;
 }
 .fa-road:before {
   content: "\f018";
@@ -269,6 +270,7 @@
 }
 .fa-play-circle-o:before {
   content: "\f01d";
+  color: #bf6766;
 }
 .fa-rotate-right:before,
 .fa-repeat:before {
@@ -382,6 +384,7 @@
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: "\f044";
+  color: #bf6766;
 }
 .fa-share-square-o:before {
   content: "\f045";
@@ -871,6 +874,7 @@
 }
 .fa-building-o:before {
   content: "\f0f7";
+  color: #bf6766;
 }
 .fa-hospital-o:before {
   content: "\f0f8";
@@ -1087,6 +1091,7 @@
 }
 .fa-play-circle:before {
   content: "\f144";
+  color: #bf6766;
 }
 .fa-ticket:before {
   content: "\f145";
@@ -1507,6 +1512,7 @@
 }
 .fa-circle-o-notch:before {
   content: "\f1ce";
+  color: #bf6766;
 }
 .fa-ra:before,
 .fa-resistance:before,
@@ -2013,6 +2019,7 @@
 }
 .fa-commenting-o:before {
   content: "\f27b";
+  color: #bf6766;
 }
 .fa-houzz:before {
   content: "\f27c";
